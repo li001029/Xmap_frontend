@@ -59,7 +59,7 @@ class Map extends React.Component {
 
   getpoi (search,city,State,country) {
 
-    fetch('http://api.openweathermap.org/geo/1.0/direct?q='+city+','
+    fetch('https://api.openweathermap.org/geo/1.0/direct?q='+city+','
     +State+','+country+'&appid=308f55416ac8415d74c54aca01205022',
     )
       .then((response) => response.json())

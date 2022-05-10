@@ -18,7 +18,7 @@ function WeatherAPI(){
     },[searchName])
     
     async function grabWeatherData(searchName){
-        const url=`http://api.openweathermap.org/data/2.5/weather?q=${searchName}&appid=308f55416ac8415d74c54aca01205022`
+        const url=`https://api.openweathermap.org/data/2.5/weather?q=${searchName}&appid=308f55416ac8415d74c54aca01205022`
         try{
         var response = await fetch(url,{
             method: 'GET'
