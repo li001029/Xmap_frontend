@@ -96,7 +96,9 @@ submitReview(event) {
             activity_type: 'Hiking'
           }));
           console.log('Authorization:'+'Bearer '+JSON.stringify(userToken));
-          console.log('Response'+JSON.stringify(Result));
+          console.log('Response msg '+JSON.stringify(Result.msg));
+          console.log('Response message '+JSON.stringify(Result.message));
+          console.log('Response ok '+JSON.stringify(Result.ok));
 
       })
   }
