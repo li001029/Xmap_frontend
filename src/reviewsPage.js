@@ -32,6 +32,7 @@ class ReviewsPage extends React.Component {
     }
   
     getreviews () {
+      console.log("review page of this location: "+this.props.location.state.id);
         const url='https://xmap.azurewebsites.net/api/reviews/'+this.props.location.state.id;
         console.log("url is "+url);
         fetch(url,{
