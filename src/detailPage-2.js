@@ -95,7 +95,8 @@ submitReview(event) {
             park_id: parseInt(this.props.location.state.id),
             activity_type: 'Hiking'
           }));
-        //   console.log('Authorization:'+'Bearer '+JSON.stringify(userToken));
+          console.log('Authorization:'+'Bearer '+JSON.stringify(userToken));
+          console.log('Response'+JSON.stringify(Result));
 
       })
   }
