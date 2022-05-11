@@ -19,9 +19,12 @@ function App() {
     //   return <Signin />
     // }
 
-    //17.0.2
+    //
     // "@material-ui/core": "^4.12.4",
     // "@material-ui/icons": "^4.11.3",
+    // "@testing-library/jest-dom": "^5.11.9",
+    // "@testing-library/react": "^11.2.5",
+    // "@testing-library/user-event": "^12.6.3",
   return (
     <>
     <Router >
