@@ -69,7 +69,7 @@ class Map extends React.Component {
         this.setState({lat:newLat,lon:newLon});
         fetch('https://atlas.microsoft.com/search/poi/json?api-version=1.0&query='
         +search+
-        '&subscription-key=SJ740NtjRi6RDR2eojq6VHfCv-0U8WhBYKZkG-rNnhA&lat='+newLat+'&lon='+newLon+'&radius=1000',
+        '&subscription-key=SJ740NtjRi6RDR2eojq6VHfCv-0U8WhBYKZkG-rNnhA&lat='+newLat+'&lon='+newLon+'&radius=10000',
         )
           .then((response) => response.json())
           .then((data) => {
