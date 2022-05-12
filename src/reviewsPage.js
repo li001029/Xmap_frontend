@@ -41,6 +41,7 @@ class ReviewsPage extends React.Component {
           .then((Result) => {
               //console.log("submit review result is "+Result.message);
               this.setState({reviews:Result.data});
+              console.log("reviews length now is "+Result.data.length);
               console.log("reviews now is "+Result.data);
           Object.entries(Result.data[0]).map(([key, value]) => {
              console.log(key+" value is "+value); 
@@ -54,8 +55,14 @@ class ReviewsPage extends React.Component {
     }
 
     render () {
+      console.log("State reviews length now is "+this.state.reviews.length);
       if (this.state.reviews.length==0) {
-        return <div><h1>There's no review yet! Go create one!</h1></div>;
+        return (<div>
+          <img   src='https://static.onecms.io/wp-content/uploads/sites/28/2020/07/10/yosemite-national-park-falls-trail-CALIHIKES0720.jpg'/>
+          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          <h1>Reviews:</h1>
+          <h1>There's no review yet! Go create one!</h1>
+          </div>)
       } 
       else {
         return (
